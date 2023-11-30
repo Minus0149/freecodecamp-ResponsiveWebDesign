@@ -1,0 +1,209 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title id="title">Original Trombones</title>
+	</head>
+	<body>
+		<header id="header">
+			<img
+				src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+				alt="original trombones logo"
+				id="header-img"
+			/>
+			<nav id="nav-bar">
+				<a class="nav-link" href="#hero" rel="noopener noreferrer">Contact</a
+				><a class="nav-link" href="#features" rel="noopener noreferrer"
+					>Features</a
+				>
+				<a class="nav-link" href="#video" rel="noopener noreferrer">Video</a>
+			</nav>
+		</header>
+		<section id="hero" class="hero">
+			<h2>Handcrafted, home-made masterpieces</h2>
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<input
+					name="email"
+					id="email"
+					type="email"
+					placeholder="Enter your email address"
+					required="true"
+				/>
+				<input id="submit" type="submit" value="Get Started" class="btn" />
+			</form>
+		</section>
+		<section id="features">
+			<div>
+				<i class="fa fa-3x fa-fire"></i>
+				<h2>Premium Materials</h2>
+				<p>
+					Our trombones use the shiniest brass which is sourced locally. This
+					will increase the longevity of your purchase.
+				</p>
+				<i class="fa fa-3x fa-truck"></i>
+				<h2>Fast Shipping</h2>
+				<p>
+					We make sure you recieve your trombone as soon as we have finished
+					making it. We also provide free returns if you are not satisfied.
+				</p>
+				<i class="fa fa-3x fa-battery-full"></i>
+				<h2>Quality Assurance</h2>
+				<p>
+					For every purchase you make, we will ensure there are no damages or
+					faults and we will check and test the pitch of your instrument.
+				</p>
+			</div>
+		</section>
+		<section class="video">
+			<iframe
+				id="video"
+				height="315"
+				src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+				frameborder="0"
+				allowfullscreen=""
+			></iframe>
+		</section>
+	</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #111;
+	background-color: #fefefe;
+	font-family: "Roboto", sans-serif;
+}
+
+main {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 5rem;
+}
+
+#header-img {
+	width: 100%;
+	height: 100%;
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #eee;
+	padding: 1rem;
+}
+
+#nav-bar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 10rem;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #111;
+}
+
+.video {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+.video iframe {
+	max-width: 600px;
+	width: 100%;
+}
+
+.hero {
+	text-align: center;
+}
+
+.hero input[type="email"] {
+	max-width: 275px;
+	width: 100%;
+	padding: 5px;
+}
+.hero input[type="submit"] {
+	max-width: 150px;
+	width: 100%;
+	height: 30px;
+	margin: 15px 0;
+	border: 0;
+	background-color: #f1c40f;
+	font-weight: 900;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+#features .flex {
+	display: flex;
+	margin: 2rem auto;
+}
+
+.flex i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 125px;
+	width: 20vw;
+	color: darkorange;
+}
+
+.flex .desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 125px;
+}
+
+#features .fire i {
+	width: 17vw;
+}
+
+@media only screen and (max-width: 720px) {
+	#nav-bar {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 5rem;
+		margin-left: 2rem;
+	}
+}
+
+
+** end of undefined **
+
